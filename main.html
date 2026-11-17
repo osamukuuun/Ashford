@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ashford — розплідник міні-мальтіпу та шпіців</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top">ASHFORD</a>
+    <button class="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav id="nav">
+      <a href="#breeds">Породи</a><a href="#dogs">Цуценята</a><a href="#standard">Стандарт</a><a href="#path">Шлях</a><a href="#contact">Контакти</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Маленькі собаки з великим <i>вихованням</i></h1>
+      <p>Сімейний розплідник міні-мальтіпу та померанських шпіців. Заснований у 2014 році. Ми вирощуємо два виводки на рік і знаємо кожне цуценя на ім’я.</p>
+      <a class="btn" href="#dogs">Дивитися цуценят</a><a class="btn ghost" href="#contact">Записатися</a>
+    </div>
+    <div class="crest">
+      <svg viewBox="0 0 100 100" fill="none" stroke="#d3b46f" stroke-width="1.2" aria-hidden="true">
+        <path d="M30 78V48c0-14 9-24 20-24s20 10 20 24v30"/>
+        <path d="M30 48 20 30l14 6M70 48l10-18-14 6"/>
+        <circle cx="42" cy="50" r="1.6" fill="#d3b46f"/><circle cx="58" cy="50" r="1.6" fill="#d3b46f"/>
+        <path d="M46 60q4 4 8 0M50 56v3"/>
+        <path d="M22 84h56" />
+      </svg>
+      <small>EST. 2014</small>
+    </div>
+  </div>
+</div>
+
+<section id="breeds">
+  <div class="wrap">
+    <div class="head"><div class="rule"></div><h2>Дві породи. Нічого зайвого.</h2><p>Ми працюємо лише з міні-мальтіпу та померанськими шпіцами — так ми можемо вкладатися в кожну лінію.</p></div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-b="mal">Міні-мальтіпу</button>
+      <button class="tab" role="tab" aria-selected="false" data-b="spz">Шпіц</button>
+    </div>
+    <div class="breed" id="breedBox"></div>
+  </div>
+</section>
+
+<section id="dogs" class="dogs-bg">
+  <div class="wrap">
+    <div class="head"><div class="rule"></div><h2>Цуценята цієї осені</h2><p>Усі цуценята з родоводом, чипом, паспортом і першою вакцинацією.</p></div>
+    <div class="filters" id="filters">
+      <button class="chip" aria-pressed="true" data-f="all">Усі</button>
+      <button class="chip" aria-pressed="false" data-f="mal">Міні-мальтіпу</button>
+      <button class="chip" aria-pressed="false" data-f="spz">Шпіци</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section id="standard">
+  <div class="wrap">
+    <div class="head"><div class="rule"></div><h2>Наш стандарт</h2></div>
+    <div class="pro">
+      <div><h3>Генетичні тести</h3><p>Обоє батьків проходять перевірку на спадкові хвороби очей, серця та колін.</p></div>
+      <div><h3>Рання соціалізація</h3><p>З третього тижня цуценята знайомляться зі звуками дому, дітьми, авто та повідком.</p></div>
+      <div><h3>Лише невеликі виводки</h3><p>Не більше двох виводків на рік від однієї суки. Вона відпочиває між ними щонайменше рік.</p></div>
+      <div><h3>Підтримка на все життя</h3><p>Консультації з догляду та грумінгу, а якщо життя зміниться — ми завжди заберемо собаку назад.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="path" class="steps">
+  <div class="wrap">
+    <div class="head"><div class="rule"></div><h2>Як потрапити до родини Ashford</h2><p>Черга на цуценят відкривається за три місяці до народження виводку.</p></div>
+    <ol class="tl">
+      <li><b>Знайомство</b><span>Коротка розмова або відеодзвінок. Ви розповідаєте про дім і ритм життя.</span></li>
+      <li><b>Резервування</b><span>Вносите депозит 5 000 ₴ і стаєте в чергу на обраний виводок.</span></li>
+      <li><b>Візит</b><span>На шостому тижні приїжджаєте й обираєте цуценя разом з нами.</span></li>
+      <li><b>Переїзд</b><span>З 12 тижнів цуценя їде додому з набором, щоденником і кормом на місяць.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <div>
+      <div class="rule"></div>
+      <h2 style="font-size:clamp(2rem,4.5vw,3rem)">Напишіть нам</h2>
+      <p style="color:var(--muted);margin:16px 0 26px">Відповідаємо протягом доби. Приймаємо лише за попереднім записом.</p>
+      <p style="margin:0">Одеса, Французький бульвар, 12<br>+380 (48) 000-14-14<br>hello@ashford-kennel.example</p>
+    </div>
+    <div>
+      <form id="form" novalidate>
+        <div><label for="n">Ваше ім’я</label><input id="n" autocomplete="name"><div class="err" id="en"></div></div>
+        <div><label for="p">Телефон або Telegram</label><input id="p" autocomplete="tel"><div class="err" id="ep"></div></div>
+        <div><label for="s">Кого ви шукаєте</label>
+          <select id="s"><option value="">Поки не вирішили</option><option>Міні-мальтіпу</option><option>Померанський шпіц</option></select></div>
+        <div><label for="m">Кілька слів про себе та дім</label><textarea id="m" rows="3"></textarea></div>
+        <button class="btn" type="submit">Надіслати заявку</button>
+      </form>
+      <div class="ok" id="ok"></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><a class="logo" href="#top">ASHFORD</a>Розплідник міні-мальтіпу та шпіців · з 2014 року<br>Усі імена, ціни та контакти на сторінці вигадані.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
